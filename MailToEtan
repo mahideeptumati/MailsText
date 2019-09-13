@@ -1,0 +1,3 @@
+Hi,
+Implemented showHierarchy feature by restricting the maximum popups to a certain number to overcome the z-index issue with other pop-ups like run prob test. It is implemented in such a way that, z-index of popup starts from 2, whenever you open a new popup z-index gets increased by 1 and gets assigned to new popup. If you close a pop-up, that popup data will be removed from an array of JSON which is maintained and all the z-index of pop-ups which is greater than removed popups gets decreased by 1. 
+In case of switching between multiple popups opened, to highlight the selected popup maximum z-index o will be assigned to the one selected and z-index of remaining popups gets reduced by 1 to maintain the same feature.
